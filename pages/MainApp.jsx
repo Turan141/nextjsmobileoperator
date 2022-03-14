@@ -18,24 +18,24 @@ function MainApp({ iconsData }) {
     payForMinutes + payForSMS + payForTraffic + payForSocial
   )
 
-  const [user, setUser] = useState(null)
+//   const [user, setUser] = useState(null)
 
-  useEffect(() => {
-    async function updatePost() {
-      const requestOptions = {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ title: 'React Hooks PUT Request Example' }),
-      }
-      const response = await fetch(
-        'https://jsonplaceholder.typicode.com/posts/1',
-        requestOptions
-      )
-      const data = await response.json()
-      setUser(data)
-    }
-    updatePost()
-  }, [])
+//   useEffect(() => {
+//     async function updatePost() {
+//       const requestOptions = {
+//         method: 'PUT',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify({ title: 'React Hooks PUT Request Example' }),
+//       }
+//       const response = await fetch(
+//         'https://jsonplaceholder.typicode.com/posts/1',
+//         requestOptions
+//       )
+//       const data = await response.json()
+//       setUser(data)
+//     }
+//     updatePost()
+//   }, [])
   useEffect(() => {
     setIcons(iconsData)
     ;(function totalSumHandler() {
