@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.MainAppDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+.MainHeader {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 7rem;
+  width: 50%;
+}
+.MainHeader h1 {
+  font-size: 1.3rem;
+  padding-top: 2rem;
+}
+.MainHeader h3 {
+  padding: 1.2rem 0 0 0;
+}
+.MainHeader p {
+  padding: 1.2rem 0 0 0;
+}
+.MainMinuteSliderDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.MainMinuteSliderDiv .internetText {
+  width: 15rem;
+  display: flex;
+  height: 5rem;
+  flex-direction: column;
+  border-right: 2px dotted cyan;
+}
+.MainMinuteSliderDiv .internetText h1 {
+  font-size: 1.1rem;
+}
+.MainMinuteSliderDiv .internetText h2 {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0 0 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.rangeDiv {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  flex-direction: column;
+}
+.rangeDiv .rangeSlider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.rangeDiv .rangeSlider input[type='range'] {
+  background-color: black;
+  cursor: pointer;
+  width: 75%;
+  background-color: black;
+}
+.rangeDiv .rangeToShow {
+  display: flex;
+  justify-content: space-around;
+  color: gray;
+  width: 97%;
+  margin-left: 1.2rem;
+}
+.rangeDiv .rangeToShow p {
+  display: flex;
+  justify-content: center;
+}
+.socialSection .socialMainDiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.socialSection .socialMainDiv .leftColumn {
+  width: 15rem;
+  display: flex;
+  height: 5rem;
+  flex-direction: column;
+  border-right: 2px dotted cyan;
+  padding-right: 10px;
+}
+.socialSection .socialMainDiv .leftColumn h1 {
+  font-size: 1.1rem;
+}
+.socialSection .socialMainDiv .leftColumn h2 {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0 0 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.socialSection .socialMainDiv .socialSecondaryDiv {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  padding-left: 3%;
+  padding-right: 3%;
+  flex-direction: row;
+}
+.socialSection .socialMainDiv .socialSecondaryDiv .iconMapsDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.socialSection
+  .socialMainDiv
+  .socialSecondaryDiv
+  .iconMapsDiv
+  .socialIconsDeactive {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.socialSection
+  .socialMainDiv
+  .socialSecondaryDiv
+  .iconMapsDiv
+  .socialIconsDeactive
+  img {
+  width: 25%;
+  opacity: 0.3;
+  filter: alpha(opacity=40);
+  border-radius: 50%;
+}
+.socialSection
+  .socialMainDiv
+  .socialSecondaryDiv
+  .iconMapsDiv
+  .socialIconsActive {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.socialSection
+  .socialMainDiv
+  .socialSecondaryDiv
+  .iconMapsDiv
+  .socialIconsActive
+  img {
+  width: 25%;
+  opacity: 1;
+  filter: alpha(opacity=40);
+  border-radius: 50%;
+}
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .MainHeader {
+    height: auto;
+    margin: 0 4rem 2rem 25%;
+  }
+  .rangeDiv {
+    border: none;
+  }
+  .rangeDiv .rangeToShow {
+    width: 16.5rem;
+    padding-right: 2rem;
+  }
+  .MainMinuteSliderDiv {
+    margin-bottom: 10%;
+  }
+  .MainMinuteSliderDiv .internetText {
+    border: none;
+  }
+  .socialSection .socialMainDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+  }
+  .socialSection .socialMainDiv .leftColumn {
+    width: 15rem;
+    display: flex;
+    height: 5rem;
+    flex-direction: column;
+    border-right: none;
+  }
+  .socialSection .socialMainDiv .leftColumn h1 {
+    font-size: 1.1rem;
+  }
+  .socialSection .socialMainDiv .leftColumn h2 {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 0 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .socialSection .socialMainDiv .socialSecondaryDiv {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding-left: 0%;
+    padding-right: 0%;
+    flex-direction: row;
+  }
+  .socialSection .socialMainDiv .socialSecondaryDiv .iconMapsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .socialSection
+    .socialMainDiv
+    .socialSecondaryDiv
+    .iconMapsDiv
+    .socialIconsDeactive {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .socialSection
+    .socialMainDiv
+    .socialSecondaryDiv
+    .iconMapsDiv
+    .socialIconsDeactive
+    img {
+    width: 100%;
+    opacity: 0.3;
+    filter: alpha(opacity=40);
+    border-radius: 50%;
+  }
+  .socialSection
+    .socialMainDiv
+    .socialSecondaryDiv
+    .iconMapsDiv
+    .socialIconsActive {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .socialSection
+    .socialMainDiv
+    .socialSecondaryDiv
+    .iconMapsDiv
+    .socialIconsActive
+    img {
+    width: 100%;
+    opacity: 1;
+    filter: alpha(opacity=40);
+    border-radius: 50%;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .MainHeader {
+    height: auto;
+    margin: 0 4rem 2rem 20%;
+  }
+  .rangeDiv {
+    border: none;
+  }
+  .rangeDiv .rangeToShow {
+    width: 18.5rem;
+    padding-right: 2rem;
+  }
+  .MainMinuteSliderDiv {
+    margin-bottom: 10%;
+  }
+  .MainMinuteSliderDiv .internetText {
+    border: none;
+  }
+  .socialSection .socialMainDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+  }
+  .socialSection .socialMainDiv .leftColumn {
+    width: 15rem;
+    display: flex;
+    height: 5rem;
+    flex-direction: column;
+    border-right: none;
+  }
+  .socialSection .socialMainDiv .leftColumn h1 {
+    font-size: 1.1rem;
+  }
+  .socialSection .socialMainDiv .leftColumn h2 {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 0 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .socialSection .socialMainDiv .socialSecondaryDiv {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding-left: 0%;
+    padding-right: 0%;
+    flex-direction: row;
+  }
+  .socialSection .socialMainDiv .socialSecondaryDiv .iconMapsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .socialSection
+    .socialMainDiv
+    .socialSecondaryDiv
+    .iconMapsDiv
+    .socialIconsDeactive {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .socialSection
+    .socialMainDiv
+    .socialSecondaryDiv
+    .iconMapsDiv
+    .socialIconsDeactive
+    img {
+    width: 100%;
+    opacity: 0.3;
+    filter: alpha(opacity=40);
+    border-radius: 50%;
+  }
+  .socialSection
+    .socialMainDiv
+    .socialSecondaryDiv
+    .iconMapsDiv
+    .socialIconsActive {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .socialSection
+    .socialMainDiv
+    .socialSecondaryDiv
+    .iconMapsDiv
+    .socialIconsActive
+    img {
+    width: 100%;
+    opacity: 1;
+    filter: alpha(opacity=40);
+    border-radius: 50%;
+  }
+}
+.MainTotalSum {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1762d3;
+  color: white;
+}
+.selectedType {
+  color: black;
+  font-weight: bold;
+}
